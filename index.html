@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#60211a">
+  <meta name="description" content="Smart GHMC Complaint Management System — frontend academic project">
+  <title>Smart GHMC — Civic Complaint Management</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="grain"></div>
+  <div class="ambient ambient-a"></div>
+  <div class="ambient ambient-b"></div>
+
+  <header class="topbar" id="topbar">
+    <div class="nav-wrap">
+      <a href="#" class="brand" data-page="home" aria-label="Smart GHMC home">
+        <span class="brand-mark"><i></i><b>GH</b></span>
+        <span class="brand-copy"><strong>SMART GHMC</strong><small>CIVIC COMPLAINT MANAGEMENT</small></span>
+      </a>
+      <div class="nav-tools">
+      <button class="icon-btn notification-btn" id="notificationBtn" aria-label="Notifications">♧<span id="notificationCount">3</span></button>
+      <button class="icon-btn theme-btn" id="themeBtn" aria-label="Toggle dark mode">◐</button>
+      <button class="menu-btn" id="menuBtn" aria-label="Open navigation">☰</button><div class="portal-user" id="portalUser"><div class="user-chip"><span class="user-avatar" id="userAvatar">C</span><span id="userName">Citizen</span></div><button class="logout-btn" id="logoutBtn">Logout</button></div>
+    </div>
+    <nav class="nav" id="nav">
+        <a href="#" data-page="home" class="nav-link active">Home</a>
+        <a href="#" data-page="report" class="nav-link">Report</a>
+        <a href="#" data-page="track" class="nav-link">Track</a>
+        <a href="#" data-page="complaints" class="nav-link">My Complaints</a>
+        <a href="#" data-page="feedback" class="nav-link">Feedback</a>
+        <a href="#" data-page="contact" class="nav-link">Contact</a>
+        <a href="#" data-page="login" class="login-link">Portal <span>↗</span></a>
+      </nav>
+    </div>
+  </header>
+
+  <div class="notification-panel" id="notificationPanel">
+    <div class="notification-head"><div><span class="eyebrow">CITY DESK</span><h3>Notifications</h3></div><button id="clearNotifications">Clear</button></div>
+    <div id="notificationList"></div>
+  </div>
+  <main id="app"></main>
+  <div class="modal-backdrop" id="modalBackdrop"><div class="modal" id="modal"></div></div>
+
+  <footer class="footer">
+    <div class="footer-inner">
+      <div class="footer-brand-block">
+        <div class="footer-brand"><span class="brand-mark small"><i></i><b>GH</b></span><strong>SMART GHMC</strong></div>
+        <p>Digital civic reporting for a cleaner, safer and better Hyderabad.</p>
+      </div>
+      <div class="footer-nav">
+        <span>QUICK LINKS</span>
+        <a href="#" data-page="report">Report a complaint</a>
+        <a href="#" data-page="track">Track complaint</a>
+        <a href="#" data-page="complaints">Complaint history</a>
+      </div>
+      <div class="footer-note">
+        <span>ACADEMIC FRONTEND</span>
+        <p>Frontend-only demo • Data stays in this browser.</p>
+      </div>
+    </div>
+    <div class="footer-bottom"><span>© 2026 Smart GHMC</span><span>Hyderabad, Telangana</span></div>
+  </footer>
+
+  <div class="toast" id="toast" aria-live="polite"></div>
+  <script src="script.js"></script>
+</body>
+</html>
